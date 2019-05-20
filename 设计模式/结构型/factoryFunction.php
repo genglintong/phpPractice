@@ -63,7 +63,7 @@ class redisCache implements cache
     {
         // TODO: Implement setValue() method.
         $val = serialize($val);
-        return $this->_mc->get($key, $val);
+        return $this->_mc->set($key, $val);
     }
 }
 
